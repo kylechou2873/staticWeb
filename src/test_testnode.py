@@ -1,6 +1,6 @@
 import unittest
 
-from textnode import TextNode, TextType, text_node_to_html_node
+from textnode import TextNode, TextType, text_node_to_html_node 
 
 
 class TestTextNode(unittest.TestCase):
@@ -32,6 +32,7 @@ class testTextNode_to_htmlNode(unittest.TestCase):
         self.assertEqual(html_node.tag, "a")
         self.assertEqual(html_node.value, "This is a text node")
         self.assertEqual(html_node.props, {"href":"test.link"})
+
 
 
 if __name__ == "__main__":
